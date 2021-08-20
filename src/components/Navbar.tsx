@@ -9,6 +9,7 @@ const Header = styled.header`
   position: fixed;
   width: 100%;
   padding: 0.5rem;
+  z-index: 100000;
   .navbar {
     display: flex;
     justify-content: space-between;
