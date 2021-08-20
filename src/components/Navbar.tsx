@@ -4,7 +4,8 @@ import { NavbarNav, Logo } from "./NavbarComponents";
 import { useState } from "react";
 
 const Header = styled.header`
-  background: red;
+  background: #00000073;
+  color: white;
   position: fixed;
   width: 100%;
   padding: 0.5rem;
@@ -18,6 +19,7 @@ const Header = styled.header`
     }
     @media (max-width: 768px) {
       .menu {
+        color: inherit;
         font-size: 1.5rem;
         border: none;
         background: inherit;
