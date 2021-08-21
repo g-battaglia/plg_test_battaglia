@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -10,33 +9,34 @@ const Styles = styled.div`
     :last-child {
       padding-right: 0;
     }
+  }
 
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      justify-content: center;
 
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #000;
+      align-items: center;
+      width: 100%;
+      transition: right 0.25s ease-in-out;
+    }
+
+    .nav__item {
+      padding: 2rem;
+      :last-child {
+        padding-right: 2rem;
+      }
+    }
+
+    .hide {
+      right: -100%;
     }
   }
-  @media (max-width: 768px) {
-      .nav {
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color:blue;
-        width: 100%;
-
-      }
-      .nav__item {
-        padding: 2rem;
-        :last-child {
-          padding-right: 2rem;
-        }
-      }
-
-      .hide {
-        display: none;
-      }
-    }
 `;
 
 type Props = {

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Slider } from "./components";
+import { Navbar, Slider, Cards } from "./components";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Slider />
+      <Cards />
     </div>
   );
 }
