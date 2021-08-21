@@ -28,7 +28,7 @@ const Styles = styled.div`
   }
   @media (max-width: 768px) {
     .flex {
-      flex-direction: column;
+      flex-direction: column-reverse;
       height: 100%;
     }
     .figure {

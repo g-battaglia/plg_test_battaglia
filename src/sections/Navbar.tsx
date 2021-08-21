@@ -27,7 +27,7 @@ const Navbar = () => {
     <Header>
       <nav className="navbar container">
         <Logo />
-        <NavbarNav menuOpen={menuOpen} />
+        <NavbarNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <ToggleMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       </nav>
     </Header>

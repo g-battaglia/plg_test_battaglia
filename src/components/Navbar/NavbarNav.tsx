@@ -41,21 +41,25 @@ const Styles = styled.div`
 
 type Props = {
   menuOpen: boolean;
+  setMenuOpen: Function;
 };
-const NavbarNav = ({ menuOpen }: Props) => {
+const NavbarNav = ({ menuOpen, setMenuOpen }: Props) => {
+  function clickHandler() {
+    setMenuOpen(false);
+  }
   return (
     <Styles className="navbar-nav">
-      <ul className={menuOpen ? "nav" : "hide nav"}>
+      <ul className={menuOpen ? "nav" : "hide nav"} onClick={clickHandler}>
         <li className="nav__item">
           <a href="#weare">we are</a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item" onClick={clickHandler}>
           <a href="#wedo">we are</a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item" onClick={clickHandler}>
           <a href="#careers">careers</a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item" onClick={clickHandler}>
           <a href="#contactus">contact us</a>
         </li>
       </ul>
