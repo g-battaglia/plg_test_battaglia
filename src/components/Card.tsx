@@ -19,6 +19,7 @@ const StyledSection = styled.section`
 
   .body {
     padding: 3rem;
+    background-color: #fff;
   }
 
   .button {
@@ -29,6 +30,7 @@ const StyledSection = styled.section`
     height: 4rem;
     font-size: 1.25rem;
     text-transform: uppercase;
+    cursor: pointer;
   }
 `;
 
