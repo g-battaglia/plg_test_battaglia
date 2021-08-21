@@ -1,4 +1,12 @@
-import { Navbar, Slider, Cards, Banners, Footer, Cookies } from "./sections";
+import {
+  Banners,
+  Cards,
+  Contact,
+  Cookies,
+  Footer,
+  Navbar,
+  Slider,
+} from "./sections";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +25,7 @@ function App() {
       <Slider />
       <Cards />
       <Banners />
+      <Contact />
       <Footer />
       <Cookies />
     </div>

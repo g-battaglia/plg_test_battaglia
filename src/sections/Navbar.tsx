@@ -7,7 +7,7 @@ const Header = styled.header`
   color: white;
   position: fixed;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   z-index: 100000;
 
   .navbar {

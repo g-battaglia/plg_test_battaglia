@@ -28,6 +28,10 @@ const StyledSection = styled.section`
     width: 100%;
     height: 4rem;
     font-size: 1.25rem;
+    transition: background 0.2s ease;
+    &:hover {
+      background: #1f1f1f;
+    }
   }
 `;
 

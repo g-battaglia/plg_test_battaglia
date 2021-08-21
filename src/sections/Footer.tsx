@@ -50,8 +50,10 @@ const Footer = () => {
     <StyledFooter>
       <img src={process.env.PUBLIC_URL + "/img/footlogo.png"} alt="" />
       <ul className="links">
+        <li>
+          <a href="#weare">we are</a>
+        </li>
         <li>we do</li>
-        <li>we are</li>
         <li>careers</li>
         <li>contact us</li>
       </ul>

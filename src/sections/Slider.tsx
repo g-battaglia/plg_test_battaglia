@@ -50,9 +50,6 @@ const Styles = styled.section`
     display: flex;
     flex-direction: column;
     position: static;
-    .carousel {
-      position: static;
-    }
     .text {
       position: static;
       left: 0;
