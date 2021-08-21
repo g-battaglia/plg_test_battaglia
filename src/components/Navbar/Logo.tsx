@@ -11,10 +11,12 @@ const StyledLogo = styled.div`
 const Logo = () => {
   return (
     <StyledLogo className="brand">
-      <img
-        src={process.env.PUBLIC_URL + "/img/logo-playground-white.png"}
-        alt="Playground Logo"
-      />
+      <a href="#top">
+        <img
+          src={process.env.PUBLIC_URL + "/img/logo-playground-white.png"}
+          alt="Playground Logo"
+        />
+      </a>
     </StyledLogo>
   );
 };

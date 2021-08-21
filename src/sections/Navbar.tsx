@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavbarNav, Logo, ToggleMenu } from "./NavbarComponents";
+import { NavbarNav, Logo, ToggleMenu } from "../components/Navbar";
 import { useState } from "react";
 
 const Header = styled.header`

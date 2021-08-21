@@ -1,6 +1,4 @@
-import Navbar from "./Navbar";
-import Slider from "./Slider";
 import Card from "./Card";
-import Cards from "./Cards";
+import Banner from "./Banner";
 
-export { Navbar, Slider, Card, Cards };
+export { Card, Banner };

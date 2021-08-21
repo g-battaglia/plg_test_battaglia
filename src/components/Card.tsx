@@ -23,14 +23,11 @@ const StyledSection = styled.section`
   }
 
   .button {
-    border: none;
     background: black;
     color: white;
     width: 100%;
     height: 4rem;
     font-size: 1.25rem;
-    text-transform: uppercase;
-    cursor: pointer;
   }
 `;
 
@@ -44,7 +41,7 @@ const Card = () => {
           dictumst. Curabitur tempus dui tortor, et bibendum lacus eleifend ut.
         </p>
       </div>
-      <button className="button">Read More</button>
+      <button className="button btn">Read More</button>
     </StyledSection>
   );
 };

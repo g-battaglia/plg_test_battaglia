@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 
 import styled from "styled-components";
 
-const Styles = styled.div`
+const Styles = styled.section`
   position: relative;
 
   .text {
@@ -68,7 +68,7 @@ const Styles = styled.div`
 
 const Slider = () => {
   return (
-    <Styles>
+    <Styles id="top">
       <Carousel className="carousel" showThumbs={false} showStatus={false}>
         <div>
           <img src={process.env.PUBLIC_URL + "/img/slide-hello.jpg"} alt="" />
