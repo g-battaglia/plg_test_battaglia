@@ -1,6 +1,7 @@
 # Playground Landing Page Test di Giacomo Battaglia
 
 Anteprima visualizzabile al segue link:
+https://bt-plg-test.netlify.app/
 [![Playground Landing Page Test di Giacomo Battaglia](https://github.com/g-battaglia/plg_test_battaglia/blob/master/public/img/screenshot.jpg)](https://bt-plg-test.netlify.app/)
 
 ## Tecnologie utilizzate:
