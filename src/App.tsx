@@ -6,6 +6,7 @@ import {
   Footer,
   Navbar,
   Slider,
+  Tabs,
 } from "./sections";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -26,6 +27,7 @@ function App() {
       <Cards />
       <Banners />
       <Contact />
+      <Tabs />
       <Footer />
       <Cookies />
     </div>

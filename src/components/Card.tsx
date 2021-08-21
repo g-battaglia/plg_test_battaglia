@@ -4,14 +4,13 @@ import styled from "styled-components";
 const p = process.env.PUBLIC_URL;
 
 const StyledSection = styled.section`
-  width: 100%;
   text-align: center;
-  .title {
+  .head {
     overflow: hidden;
     height: 100px;
-
     // zoom and center the image
-    background-image: url(${p}/img/card-play-harder.png);
+    // process.env.PUBLIC_URL + "/img/card-play-harder.png";
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,6 +19,7 @@ const StyledSection = styled.section`
   .body {
     padding: 3rem;
     background-color: #fff;
+    height: calc(100% - 4rem - 100px);
   }
 
   .button {
@@ -35,15 +35,22 @@ const StyledSection = styled.section`
   }
 `;
 
-const Card = () => {
+type Props = {
+  head: string;
+  body: string;
+};
+
+const Card = ({ head, body }: Props) => {
   return (
     <StyledSection>
-      <div className="title"></div>
+      <div
+        className="head"
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL + head})`,
+        }}
+      />
       <div className="body">
-        <p>
-          Aenean mollis dolor a mattis viverra. In hac habitasse platea
-          dictumst. Curabitur tempus dui tortor, et bibendum lacus eleifend ut.
-        </p>
+        <p>{body}</p>
       </div>
       <button className="button btn">Read More</button>
     </StyledSection>
