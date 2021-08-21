@@ -20,7 +20,7 @@ const Styles = styled.div`
 
 const Contact = () => {
   return (
-    <Styles>
+    <Styles id="contactus">
       <div className="container">
         <Info />
         <Form />

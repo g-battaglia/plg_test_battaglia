@@ -53,9 +53,15 @@ const Footer = () => {
         <li>
           <a href="#weare">we are</a>
         </li>
-        <li>we do</li>
-        <li>careers</li>
-        <li>contact us</li>
+        <li>
+          <a href="#wedo">we do</a>
+        </li>
+        <li>
+          <a href="#careers">careers</a>
+        </li>
+        <li>
+          <a href="#contactus">contact us</a>
+        </li>
       </ul>
       <div className="social">
         <FontAwesomeIcon

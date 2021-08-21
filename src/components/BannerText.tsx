@@ -23,21 +23,23 @@ const Styles = styled.div`
 const reversedStyles = { backgroundColor: "white", color: "black" };
 
 type Props = {
+  title: string;
+  buttonText: string;
   className?: string;
   reverse?: boolean;
 };
-const BannerText = ({ className, reverse }: Props) => {
+const BannerText = ({ className, reverse, title, buttonText }: Props) => {
   return (
     <Styles className={className} style={reverse ? reversedStyles : {}}>
       <div className={reverse ? "inner inner-reverse" : "inner"}>
-        <h2 className="title">we are.</h2>
+        <h2 className="title">{title}</h2>
         <p className="description">
           Consectetur adipiscing elit. Nulla condimentum tortor sem.
         </p>
         <button
           className={reverse ? "btn btn-outline-dark" : "btn btn-outline-light"}
         >
-          THE PLAYERS
+          {buttonText}
         </button>
       </div>
     </Styles>

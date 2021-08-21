@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import BannerText from "./BannerText";
 
-const p = process.env.PUBLIC_URL;
-
 const Styles = styled.div`
   .flex {
     display: flex;
@@ -12,7 +10,7 @@ const Styles = styled.div`
 
   .figure {
     overflow: hidden;
-    background-image: url(${p}/img/banner-we-are.jpg);
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,16 +43,29 @@ const Styles = styled.div`
 `;
 
 type Props = {
+  title: string;
+  buttonText: string;
+  image?: string;
   reverse?: boolean;
   id?: string;
 };
 
-const Banner = ({ reverse, id }: Props) => {
+const Banner = ({ reverse, id, image, title, buttonText }: Props) => {
   return (
     <Styles id={id}>
       <div className={reverse ? "flex reverse" : "flex"}>
-        <div className="figure"></div>
-        <BannerText className="text" reverse={reverse} />
+        <div
+          className="figure"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL + image})`,
+          }}
+        ></div>
+        <BannerText
+          className="text"
+          reverse={reverse}
+          title={title}
+          buttonText={buttonText}
+        />
       </div>
     </Styles>
   );
