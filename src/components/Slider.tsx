@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   position: relative;
+
   .text {
     color: white;
     position: absolute;
@@ -12,6 +13,7 @@ const Styles = styled.div`
     top: 30%;
     left: 10%;
     max-width: 18%;
+    max-height: 80%;
   }
   .text_title {
     font-size: 3em;
@@ -44,19 +46,30 @@ const Styles = styled.div`
       font-size: 0.8em;
     }
   }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    .carousel {
+      position: static;
+    }
+    .text {
+      position: static;
+      left: 0;
+      transform: translate(0, 0);
+      width: 100%;
+      top: 100%;
+      background-color: black;
+      backdrop-filter: none;
+      border-radius: 0;
+    }
+  }
 `;
 
 const Slider = () => {
   return (
     <Styles>
-      <div className="text">
-        <h2 className="text_title">lorem ipsum.</h2>
-        <p className="text_body">
-          Consectetur adipiscing elit. Nulla condimentum tortor sem, in semper
-          nisl bibendum eu.
-        </p>
-      </div>
-      <Carousel showThumbs={false} showStatus={false}>
+      <Carousel className="carousel" showThumbs={false} showStatus={false}>
         <div>
           <img src={process.env.PUBLIC_URL + "/img/slide-hello.jpg"} alt="" />
         </div>
@@ -67,6 +80,13 @@ const Slider = () => {
           <img src={process.env.PUBLIC_URL + "/img/slide-play.jpg"} alt="" />
         </div>
       </Carousel>
+      <div className="text">
+        <h2 className="text_title">lorem ipsum.</h2>
+        <p className="text_body">
+          Consectetur adipiscing elit. Nulla condimentum tortor sem, in semper
+          nisl bibendum eu.
+        </p>
+      </div>
     </Styles>
   );
 };
