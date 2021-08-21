@@ -46,6 +46,7 @@ const StyledForm = styled.form`
     border: 1px solid #ccc;
     background-color: black;
     padding: 1rem;
+    border-radius: 0;
   }
 `;
 
