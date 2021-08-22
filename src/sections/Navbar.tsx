@@ -25,6 +25,7 @@ const Header = styled.header`
 
 const scrollStyle = {
   backgroundColor: "#000000c0",
+  webkitBackdropFilter: "blur(10px)",
   backdropFilter: "blur(10px)",
 };
 

@@ -32,6 +32,7 @@ const Styles = styled.section`
     text-align: center;
     .text {
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       background-color: #0000007b;
       border-radius: 16px;
       top: 50%; /* 3 */
