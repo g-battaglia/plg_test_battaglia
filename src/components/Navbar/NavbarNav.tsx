@@ -54,7 +54,7 @@ const NavbarNav = ({ menuOpen, setMenuOpen }: Props) => {
           <a href="#weare">we are</a>
         </li>
         <li className="nav__item" onClick={clickHandler}>
-          <a href="#wedo">we are</a>
+          <a href="#wedo">we do</a>
         </li>
         <li className="nav__item" onClick={clickHandler}>
           <a href="#careers">careers</a>
