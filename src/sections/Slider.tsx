@@ -23,6 +23,7 @@ const Styles = styled.section`
   .text_body {
     font-size: 0.85em;
     font-weight: medium;
+    line-height: 1.5;
   }
   @media (max-width: 768px) {
     display: flex;

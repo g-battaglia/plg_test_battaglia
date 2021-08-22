@@ -14,6 +14,9 @@ const Styles = styled.div`
   .title {
     font-size: 4rem;
   }
+  .description {
+    font-weight: 300;
+  }
 
   @media (max-width: 768px) {
     .inner-reverse {

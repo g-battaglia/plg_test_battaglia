@@ -20,12 +20,13 @@ const StyledSection = styled.section`
     padding: 3rem;
     background-color: #fff;
     height: calc(100% - 4rem - 100px);
+    font-weight: 300;
   }
 
   .button {
     width: 100%;
-    height: 4rem;
-    font-size: 1.25rem;
+    height: 3rem;
+    font-size: 1rem;
   }
 `;
 

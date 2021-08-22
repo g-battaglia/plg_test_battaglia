@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   max-width: 50%;
+
   h2 {
     font-size: 4em;
     margin-bottom: 2rem;
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.5;
   }
   @media (max-width: 768px) {
     max-width: 100%;
