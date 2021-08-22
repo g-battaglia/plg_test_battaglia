@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Styles = styled.h3`
+  text-align: center;
   min-width: fit-content;
   width: 35%;
   text-transform: none;
@@ -13,6 +14,7 @@ const Styles = styled.h3`
   }
   @media (max-width: 768px) {
     width: 100%;
+    padding: 2rem;
   }
 `;
 

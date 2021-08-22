@@ -17,6 +17,7 @@ const Styles = styled.li`
     width: 65%;
     height: 100%;
     display: flex;
+    line-height: 1.25;
   }
   .hide {
     height: 0;
