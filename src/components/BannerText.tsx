@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Styles = styled.div`
   background-color: black;
@@ -13,6 +14,7 @@ const Styles = styled.div`
   .title {
     font-size: 4rem;
   }
+
   @media (max-width: 768px) {
     .inner-reverse {
       margin-left: auto;
@@ -40,6 +42,7 @@ const BannerText = ({ className, reverse, title, buttonText }: Props) => {
           className={reverse ? "btn btn-outline-dark" : "btn btn-outline-light"}
         >
           {buttonText}
+          <FontAwesomeIcon className="chevron" icon="chevron-right" />
         </button>
       </div>
     </Styles>

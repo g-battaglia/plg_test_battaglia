@@ -26,11 +26,11 @@ const Styles = styled.div`
   }
   @media (max-width: 768px) {
     .flex {
-      flex-direction: column-reverse;
+      flex-direction: column;
       height: 100%;
     }
     .figure {
-      height: 65vh;
+      height: 35vh;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -38,6 +38,7 @@ const Styles = styled.div`
     }
     .text {
       width: 100%;
+      height: 65vh;
     }
   }
 `;

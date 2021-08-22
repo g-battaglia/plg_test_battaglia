@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TabsList } from "../components/Tabs";
 const StyledSection = styled.section`
-  padding: 4rem 0;
+  padding: 5rem 0;
   position: relative;
 `;
 

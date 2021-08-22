@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 
 const Styles = styled.li`
@@ -7,10 +6,13 @@ const Styles = styled.li`
     min-width: fit-content;
     width: 35%;
     text-transform: none;
-    background-color: gray;
+    background-color: #cccccc;
+    color: black;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(235, 235, 235);
   }
   .content {
-    padding: 2rem;
+    padding: 3rem;
     background-color: white;
     position: absolute;
     top: 0;
@@ -30,6 +32,7 @@ const Styles = styled.li`
 
   .active {
     background-color: black;
+    color: white;
   }
 
   @media (max-width: 768px) {
@@ -41,7 +44,8 @@ const Styles = styled.li`
     .content {
       position: static;
       width: 100%;
-      height: 300px;
+      min-height: 350px;
+      height: fit-content;
     }
     .hide {
       display: none;

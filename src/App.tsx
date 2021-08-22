@@ -10,14 +10,25 @@ import {
 } from "./sections";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookSquare,
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faBars, faTimes, faFacebookSquare, faInstagram, faLinkedinIn);
+library.add(
+  faBars,
+  faChevronRight,
+  faFacebookSquare,
+  faInstagram,
+  faLinkedinIn,
+  faTimes
+);
 
 function App() {
   return (

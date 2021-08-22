@@ -16,3 +16,9 @@ https://bt-plg-test.netlify.app/
 - React styled-components
 - React responsive carousel
 - React cookie consent
+- react-use
+
+## Api:
+
+- Built with Python fastAPI
+- Link: https://pag-test-fastapi.herokuapp.com/
