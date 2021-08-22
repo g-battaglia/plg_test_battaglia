@@ -12,7 +12,7 @@ const Errors = ({ errors }: Props) => {
           <Alert message={"Message field is required."} />
         )}
         {errors.message?.type === "minLength" && (
-          <Alert message={"Message must be a minimum 10 characters long."} />
+          <Alert message={"Message must be at least 10 characters long."} />
         )}
       </div>
       <div className="error">
