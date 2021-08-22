@@ -25,28 +25,25 @@ const TabsList = () => {
   return (
     <StyledUl className="menu">
       <TabBtn
+        title="Vestibulum at odio sit amet"
         active={firstTab}
         setActive={setFirstTab}
         closeAll={closeAllTabs}
+        url="https://pag-test-fastapi.herokuapp.com/1"
       />
       <TabBtn
+        title="Sed vehicula neque"
         active={secondTab}
         setActive={setSecondTab}
         closeAll={closeAllTabs}
+        url="https://pag-test-fastapi.herokuapp.com/2"
       />
       <TabBtn
+        title="Nulla id libero pretium"
         active={thirdTab}
         setActive={setThirdTab}
         closeAll={closeAllTabs}
-        content={`Vestibulum at odio sit amet diam consectetur congue.", "Donec imperdiet
-        tincidunt nisi non dignissim.", "Maecenas diam metus, fermentum a velit
-        ut, auctor consequat ligula.", "In ultrices lobortis venenatis.",
-        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-        posuere cubilia Curae; Quisque dignissim sit amet lectus ac tincidunt.",
-        "Quisque bibendum mi at tempus tempus.", "Suspendisse pretium, quam eu
-        faucibus cursus, nunc leo pharetra justo, ut rutrum lorem ipsum quis
-        velit.", "Aenean imperdiet molestie dignissim.", "Curabitur faucibus
-        nulla metus, vel ornare libero accumsan eget.`}
+        url="https://pag-test-fastapi.herokuapp.com/3"
       />
     </StyledUl>
   );

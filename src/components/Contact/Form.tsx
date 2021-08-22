@@ -102,7 +102,7 @@ const Form = () => {
           {...register("mail", {
             required: true,
             pattern:
-              /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/i,
+              /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/i,
           })}
         />
       </div>

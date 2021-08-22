@@ -1,18 +1,14 @@
 import styled from "styled-components";
+import Loader from "../Loader";
+import API from "../../API";
+import { useState, useEffect } from "react";
+import TabTitle from "./TabTitle";
 
 const Styles = styled.li`
   display: flex;
-  .title {
-    min-width: fit-content;
-    width: 35%;
-    text-transform: none;
-    background-color: #cccccc;
-    color: black;
-    font-weight: 400;
-    border-bottom: 1px solid rgb(235, 235, 235);
-  }
+
   .content {
-    padding: 3rem;
+    padding: 4rem;
     background-color: white;
     position: absolute;
     top: 0;
@@ -20,6 +16,7 @@ const Styles = styled.li`
     font-weight: 300;
     width: 65%;
     height: 100%;
+    display: flex;
   }
   .hide {
     height: 0;
@@ -38,14 +35,13 @@ const Styles = styled.li`
   @media (max-width: 768px) {
     flex-direction: column;
     height: fit-content;
-    .title {
-      width: 100%;
-    }
+
     .content {
       position: static;
       width: 100%;
       min-height: 350px;
       height: fit-content;
+      padding: 2rem;
     }
     .hide {
       display: none;
@@ -54,28 +50,37 @@ const Styles = styled.li`
 `;
 
 type Props = {
-  title?: string;
-  content?: string;
+  title: string;
   active: boolean;
   setActive: Function;
   closeAll: () => void;
+  url: string;
 };
-const TabBtn = ({ title, content, active, setActive, closeAll }: Props) => {
+
+const TabBtn = ({ title, active, setActive, closeAll, url }: Props) => {
+  const [item, setItem] = useState(false as any);
+
   function clickHandler() {
     closeAll();
     setActive(true);
   }
 
+  useEffect(() => {
+    async function fetchApi() {
+      setItem(false);
+      const data = await API.getData(url);
+      setTimeout(function () {
+        setItem(data.item);
+      }, 500);
+    }
+    fetchApi();
+  }, [url, active]);
+
   return (
     <Styles className="tab__item">
-      <h3
-        className={"title btn btn-dark" + (active ? " active" : "")}
-        onClick={clickHandler}
-      >
-        Vestibulum at odio sit amet
-      </h3>
+      <TabTitle title={title} active={active} clickHandler={clickHandler} />
       <div className={active ? "content" : "content hide"}>
-        <p>{content ? content : "Aasdasdasd"}</p>
+        <p>{item ? item.content : <Loader />}</p>
       </div>
     </Styles>
   );
