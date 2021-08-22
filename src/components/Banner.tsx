@@ -27,7 +27,7 @@ const Styles = styled.div`
   @media (max-width: 768px) {
     .flex {
       flex-direction: column;
-      height: 100%;
+      height: fit-content;
     }
     .figure {
       height: 35vh;
@@ -38,7 +38,12 @@ const Styles = styled.div`
     }
     .text {
       width: 100%;
-      height: 65vh;
+    }
+  }
+  @media (max-width: 576px) {
+    .figure {
+      height: 150px;
+    }
     }
   }
 `;

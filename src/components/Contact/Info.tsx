@@ -18,6 +18,7 @@ const Styles = styled.div`
   @media (max-width: 576px) {
     margin-right: 0;
     margin-bottom: 4rem;
+    text-align: center;
   }
 `;
 

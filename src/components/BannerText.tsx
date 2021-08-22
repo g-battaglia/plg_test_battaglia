@@ -23,6 +23,13 @@ const Styles = styled.div`
       margin-left: auto;
     }
   }
+  @media (max-width: 576px) {
+    .inner {
+      text-align: center;
+      margin: 2rem;
+      width: calc(100% - 4rem);
+    }
+  }
 `;
 
 const reversedStyles = { backgroundColor: "white", color: "black" };
