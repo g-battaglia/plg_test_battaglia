@@ -17,6 +17,9 @@ const Styles = styled.div`
   .description {
     font-weight: 300;
   }
+  .btn {
+    min-width: 12rem;
+  }
 
   @media (max-width: 768px) {
     .inner-reverse {
