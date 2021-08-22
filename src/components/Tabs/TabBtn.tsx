@@ -37,11 +37,12 @@ const Styles = styled.li`
     height: fit-content;
 
     .content {
-      position: static;
+      position: relative;
       width: 100%;
       min-height: 350px;
       height: fit-content;
       padding: 2rem;
+      left: 0;
     }
     .hide {
       display: none;
