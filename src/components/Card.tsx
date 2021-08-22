@@ -23,15 +23,9 @@ const StyledSection = styled.section`
   }
 
   .button {
-    background: black;
-    color: white;
     width: 100%;
     height: 4rem;
     font-size: 1.25rem;
-    transition: background 0.2s ease;
-    &:hover {
-      background: #1f1f1f;
-    }
   }
 `;
 
@@ -52,7 +46,7 @@ const Card = ({ head, body }: Props) => {
       <div className="body">
         <p>{body}</p>
       </div>
-      <button className="button btn">Read More</button>
+      <button className="button btn btn-dark">Read More</button>
     </StyledSection>
   );
 };

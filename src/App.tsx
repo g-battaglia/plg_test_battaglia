@@ -26,8 +26,8 @@ function App() {
       <Slider />
       <Cards />
       <Banners />
-      <Contact />
       <Tabs />
+      <Contact />
       <Footer />
       <Cookies />
     </div>

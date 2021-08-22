@@ -1,7 +1,15 @@
 @font-face {
   font-family: "Gotham";
+  font-weight: normal;
   src: url("./assets/fonts/Gotham-Book.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 100;
+  src: url("./assets/fonts/Gotham-Light.otf") format("opentype");
+}
+
 @font-face {
   font-family: "Gotham";
   font-weight: medium;
@@ -47,7 +55,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   @media screen and (max-width: 768px) {
     max-width: 100%;
   }
@@ -63,6 +71,9 @@ a {
   font-weight: medium;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-outline-light {
@@ -84,5 +95,14 @@ a {
   &:hover {
     background-color: black;
     color: white;
+  }
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #1f1f1f;
   }
 }
